@@ -1,1 +1,48 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLmir3pgbjmg4XloLHjga7ml6XmrKHlj5blvpfvvIh2Me+8ieOAggoK5Y+W5b6X5YWIOgogIC0g44Od44Kx44Oi44Oz44K744Oz44K/44O844Kq44Oz44Op44Kk44OzIOOCteODneODvOODiC/jgYrnn6XjgonjgZvvvIjlrprlnovjg5Xjgqnjg7zjg57jg4Pjg4g6CiAgICDlv5zli5/lj5fku5jmnJ/plpPvvI/mir3pgbjntZDmnpznmbrooajml6XvvI/ms6jmlofmnJ/plpMg44Gu6KGo77yJCiAgLSDjg53jgrHjgqvmir3pgbjlm7PpkZEgKHBva2VjYS1uYXZpLmpwKTog5Y+X5LuY5Lit5oq96YG444Gu6ZuG57SE77yI5Zyw5Z+f44OH44O844K/44GC44KK77yJCiAgLSDjgrnjg4vjg7zjgqvjg7zjg4Djg7Pjgq/mir3pgbjjgb7jgajjgoHoqJjkuosKCuWHuuWKmzogZGF0YS9sb3R0ZXJpZXMuanNvbu+8iGlkIOOBp+mHjeikh+aOkumZpOOBl+OAgeacn+mWk+OBjOmBjuOBjuOBn+OCguOBruOBr+aui+OBmeOBjArjg5Xjg63jg7Pjg4jlgbTjgafnt6DliIfpoIbjg7vlj5fku5jkuK3lhKrlhYjjgavkuKbjgbnjgovvvIkKIiIiCmltcG9ydCBqc29uCmltcG9ydCBzeXMKaW1wb3J0IHVybGxpYi5yZXF1ZXN0CmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKUk9PVCA9IFBhdGgoX19maWxlX18pLnJlc29sdmUoKS5wYXJlbnQucGFyZW50CkxPVFRFUklFU19QQVRIID0gUk9PVCAvICJkYXRhIiAvICJsb3R0ZXJpZXMuanNvbiIKVUEgPSB7IlVzZXItQWdlbnQiOiAicG9rZWthLXN5c3RlbS8xLjAgKHBlcnNvbmFsIGxvdHRlcnkgYm9hcmQpIn0KCkFSRUFTID0gWwogICAgIuWFqOWbvSIsICLlpKfmiYvpgJrosqnjgrXjgqTjg4giLCAi5aSn5omL44Kr44O844OJ44K344On44OD44OXIiwgIuacreW5jCIsCiAgICAi5a6u5Z+O77yI5bGx5b2i44O756aP5bO25ZCr44KA77yJIiwgIuWfvOeOiSIsICLljYPokYkiLCAi5p2x5LqsIiwgIuelnuWliOW3nSIsCiAgICAi5oSb55+l77yI5LiJ6YeN44O75bKQ6Zic5ZCr44KA77yJIiwgIuWkp+mYqu+8iOS6rOmDveODu+WFteW6q+ODu+WliOiJr+ODu+WSjOatjOWxseWQq+OCgO+8iSIsCiAgICAi5bqD5bO2IiwgIuemj+Wyoe+8iOS9kOizgOODu+Wkp+WIhuODu+eGiuacrOWQq+OCgO+8iSIsCl0KCgpkZWYgZmV0Y2godXJsOiBzdHIpIC0+IHN0cjoKICAgIHJlcSA9IHVybGxpYi5yZXF1ZXN0LlJlcXVlc3QodXJsLCBoZWFkZXJzPVVBKQogICAgd2l0aCB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHJlcSwgdGltZW91dD0zMCkgYXMgcjoKICAgICAgICByZXR1cm4gci5yZWFkKCkuZGVjb2RlKCJ1dGYtOCIsIGVycm9ycz0icmVwbGFjZSIpCgoKZGVmIG1haW4oKSAtPiBpbnQ6CiAgICBkYXRhID0geyJ1cGRhdGVkX2F0IjogTm9uZSwgIml0ZW1zIjogW119CiAgICBpZiBMT1RURVJJRVNfUEFUSC5leGlzdHMoKToKICAgICAgICBkYXRhID0ganNvbi5sb2FkcyhMT1RURVJJRVNfUEFUSC5yZWFkX3RleHQoZW5jb2Rpbmc9InV0Zi04IikpCiAgICBrbm93biA9IHtpdFsiaWQiXSBmb3IgaXQgaW4gZGF0YVsiaXRlbXMiXX0KICAgICMgVE9ETyh2MeWun+ijhSk6IOODneOCseOCu+ODs+WRiuefpeODmuODvOOCuOOBruODkeODvOOCue+8iOWumuWei+ihqOKGkuacn+mWk+ODu+eZuuihqOaXpeOCkuaKveWHuu+8iQogICAgIyBUT0RPKHYx5a6f6KOFKTog44Od44Kx44Kr5oq96YG45Zuz6ZGR44Gu44OR44O844K577yI5Zyw5Z+f44GvIEFSRUFTIOOBruOBhOOBmuOCjOOBi+OBq+ato+imj+WMlu+8iQogICAgcHJpbnQoZiJleGlzdGluZyBsb3R0ZXJpZXM9e2xlbihrbm93bil9OyBwYXJzZXJzIG5vdCB5ZXQgZW5hYmxlZCIpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBzeXMuZXhpdChtYWluKCkpCg==
+#!/usr/bin/env python3
+"""抽選情報の日次取得（v1）。
+
+取得先:
+  - ポケモンセンターオンライン サポート/お知らせ（定型フォーマット:
+    応募受付期間／抽選結果発表日／注文期間 の表）
+  - ポケカ抽選図鑑 (pokeca-navi.jp): 受付中抽選の集約（地域データあり）
+  - スニーカーダンク抽選まとめ記事
+
+出力: data/lotteries.json（id で重複排除し、期間が過ぎたものは残すが
+フロント側で締切順・受付中優先に並べる）
+"""
+import json
+import sys
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LOTTERIES_PATH = ROOT / "data" / "lotteries.json"
+UA = {"User-Agent": "pokeka-system/1.0 (personal lottery board)"}
+
+AREAS = [
+    "全国", "大手通販サイト", "大手カードショップ", "札幌",
+    "宮城（山形・福島含む）", "埼玉", "千葉", "東京", "神奈川",
+    "愛知（三重・岐阜含む）", "大阪（京都・兵庫・奈良・和歌山含む）",
+    "広島", "福岡（佐賀・大分・熊本含む）",
+]
+
+
+def fetch(url: str) -> str:
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", errors="replace")
+
+
+def main() -> int:
+    data = {"updated_at": None, "items": []}
+    if LOTTERIES_PATH.exists():
+        data = json.loads(LOTTERIES_PATH.read_text(encoding="utf-8"))
+    known = {it["id"] for it in data["items"]}
+    # TODO(v1実装): ポケセン告知ページのパース（定型表→期間・発表日を抽出）
+    # TODO(v1実装): ポケカ抽選図鑑のパース（地域は AREAS のいずれかに正規化）
+    print(f"existing lotteries={len(known)}; parsers not yet enabled")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
