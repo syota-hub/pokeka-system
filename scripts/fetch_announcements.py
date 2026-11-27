@@ -1,1 +1,38 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLmlrDllYblk4Hnmbrooajjga7nm6PoppbvvIjnn63plpPpmpTjg6/jg7zjgq/jg5Xjg63jg7znlKjvvInjgIIKCuODneOCseOCq+WFrOW8j+OBruWVhuWTgeODu+OBiuefpeOCieOBm+ODmuODvOOCuOOCkui7veOBj+eiuuiqjeOBl+OAgeacqueZu+mMsuOBruaWsOWVhuWTgeOBjOOBguOCjOOBsApkYXRhL3Byb2R1Y3RzLmpzb24g44Gr6L+95Yqg44GZ44KL44CC5paw5ZWG5ZOB44Gr57SQ44Gl44GP5oq96YG444GvIGZldGNoX2xvdHRlcmllcyDlgbTjgacK5ZCM44GY6YCf44GV44Gn6L+944GG5YmN5o+Q77yI44GT44Gu44K544Kv44Oq44OX44OI44GvIHByb2R1Y3RzIOOBruOBv+aLheW9k++8ieOAggoKR2l0SHViIEFjdGlvbnMg44Gu5a6a5pyf5a6f6KGM44Gr44Gv5pWw5YiG44Cc5Y2B5pWw5YiG44Gu6YGF5bu244GM44GC44KK44GG44KL44Gf44KB44CBCuOAjOeZuuihqOOBqOWQjOaZguOAjeOBryAxNeOAnDMwIOWIhuS7peWGheOBruWPjeaYoOOBjOePvuWun+OBrueykuW6puOAggoiIiIKaW1wb3J0IGpzb24KaW1wb3J0IHN5cwppbXBvcnQgdXJsbGliLnJlcXVlc3QKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpST09UID0gUGF0aChfX2ZpbGVfXykucmVzb2x2ZSgpLnBhcmVudC5wYXJlbnQKUFJPRFVDVFNfUEFUSCA9IFJPT1QgLyAiZGF0YSIgLyAicHJvZHVjdHMuanNvbiIKVUEgPSB7IlVzZXItQWdlbnQiOiAicG9rZWthLXN5c3RlbS8xLjAgKHBlcnNvbmFsIG5ldy1wcm9kdWN0IHdhdGNoKSJ9CgoKZGVmIGZldGNoKHVybDogc3RyKSAtPiBzdHI6CiAgICByZXEgPSB1cmxsaWIucmVxdWVzdC5SZXF1ZXN0KHVybCwgaGVhZGVycz1VQSkKICAgIHdpdGggdXJsbGliLnJlcXVlc3QudXJsb3BlbihyZXEsIHRpbWVvdXQ9MzApIGFzIHI6CiAgICAgICAgcmV0dXJuIHIucmVhZCgpLmRlY29kZSgidXRmLTgiLCBlcnJvcnM9InJlcGxhY2UiKQoKCmRlZiBtYWluKCkgLT4gaW50OgogICAgZGF0YSA9IHsidXBkYXRlZF9hdCI6IE5vbmUsICJpdGVtcyI6IFtdfQogICAgaWYgUFJPRFVDVFNfUEFUSC5leGlzdHMoKToKICAgICAgICBkYXRhID0ganNvbi5sb2FkcyhQUk9EVUNUU19QQVRILnJlYWRfdGV4dChlbmNvZGluZz0idXRmLTgiKSkKICAgIGtub3duID0ge2l0WyJpZCJdIGZvciBpdCBpbiBkYXRhWyJpdGVtcyJdfQogICAgIyBUT0RPKHYx5a6f6KOFKTog5YWs5byP5ZWG5ZOB44Oa44O844K444Gu44OR44O844K577yI5ZWG5ZOB5ZCN77yP56iu6aGe77yP55m65aOy5pel77yP5a6a5L6h77yPVVJM77yJCiAgICBwcmludChmImV4aXN0aW5nIHByb2R1Y3RzPXtsZW4oa25vd24pfTsgcGFyc2VyIG5vdCB5ZXQgZW5hYmxlZCIpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBzeXMuZXhpdChtYWluKCkpCg==
+#!/usr/bin/env python3
+"""新商品発表の監視（短間隔ワークフロー用）。
+
+ポケカ公式の商品・お知らせページを軽く確認し、未登録の新商品があれば
+data/products.json に追加する。新商品に紐づく抽選は fetch_lotteries 側で
+同じ速さで追う前提（このスクリプトは products のみ担当）。
+
+GitHub Actions の定期実行には数分〜十数分の遅延がありうるため、
+「発表と同時」は 15〜30 分以内の反映が現実の粒度。
+"""
+import json
+import sys
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+PRODUCTS_PATH = ROOT / "data" / "products.json"
+UA = {"User-Agent": "pokeka-system/1.0 (personal new-product watch)"}
+
+
+def fetch(url: str) -> str:
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", errors="replace")
+
+
+def main() -> int:
+    data = {"updated_at": None, "items": []}
+    if PRODUCTS_PATH.exists():
+        data = json.loads(PRODUCTS_PATH.read_text(encoding="utf-8"))
+    known = {it["id"] for it in data["items"]}
+    # TODO(v1実装): 公式商品ページのパース（商品名／種類／発売日／定価／URL）
+    print(f"existing products={len(known)}; parser not yet enabled")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,1 +1,56 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLkvqHmoLzjga7ml6XmrKHlj5blvpfvvIh2Me+8ieOAggoK5Y+W5b6X5YWIOgogIC0g44OI44Os44Kr44OX44Ot55u45aC0ICh0Y2dwcm8uY28uanAgLyBzb3ViYXByby5jb20pOiDjgrfjg7PjgrDjg6vosrflj5bkvqHmoLzjga7pm4boqIgKICAtIOiyt+WPluODm+ODoOODqSAoa2FpdG9yaS1ob211cmEuY29tKTog5pyq6ZaL5bCBQk9Y6LK35Y+W6KGo77yI44K344Ol44Oq44Oz44Kv5pyJ54Sh5Yil77yJ44CBUFNBMTDosrflj5booagKCuWHuuWKmzogZGF0YS9wcmljZXMuanNvbgogIHsgInVwZGF0ZWRfYXQiOiBJU08sICJpdGVtcyI6IHsgbWFzdGVyX2lkOiB7YnV5YmFjaywgZmxlYSwgc2FsZSwgcHNhOnsxMC4uNiwgbG93fX0gfSB9Cgrms6jmhI86IOWQhOOCteOCpOODiOOBrkhUTUzmp4vpgKDjga/lpInjgo/jgorjgYbjgovjgILjg5Hjg7zjgrXjga/mp4vpgKDlpInmm7TjgavlvLHjgYTliY3mj5DjgafjgIEK5Y+W5b6X44Gn44GN44Gq44GL44Gj44Gf5ZOB55uu44Gv5YmN5Zue44Gu5YCk44KS5L+d5oyB44GZ44KL77yI5raI44GV44Gq44GE77yJ44CCCuOCteOCpOODiOWBtOOBruiyoOiNt+OBq+OBquOCieOBquOBhOOCiOOBhuOAgeODquOCr+OCqOOCueODiOmWk+malOOCkuepuuOBkeOAgVVzZXItQWdlbnTjgpLmmI7npLrjgZnjgovjgIIKIiIiCmltcG9ydCBqc29uCmltcG9ydCBzeXMKaW1wb3J0IHRpbWUKaW1wb3J0IHVybGxpYi5yZXF1ZXN0CmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKUk9PVCA9IFBhdGgoX19maWxlX18pLnJlc29sdmUoKS5wYXJlbnQucGFyZW50ClBSSUNFU19QQVRIID0gUk9PVCAvICJkYXRhIiAvICJwcmljZXMuanNvbiIKTUFTVEVSX1BBVEggPSBST09UIC8gImRhdGEiIC8gIm1hc3Rlci5qc29uIgpVQSA9IHsiVXNlci1BZ2VudCI6ICJwb2tla2Etc3lzdGVtLzEuMCAocGVyc29uYWwgYXNzZXQgdHJhY2tlcikifQoKCmRlZiBmZXRjaCh1cmw6IHN0cikgLT4gc3RyOgogICAgcmVxID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCh1cmwsIGhlYWRlcnM9VUEpCiAgICB3aXRoIHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxLCB0aW1lb3V0PTMwKSBhcyByOgogICAgICAgIHJldHVybiByLnJlYWQoKS5kZWNvZGUoInV0Zi04IiwgZXJyb3JzPSJyZXBsYWNlIikKCgpkZWYgbG9hZF9qc29uKHBhdGg6IFBhdGgsIGRlZmF1bHQpOgogICAgaWYgcGF0aC5leGlzdHMoKToKICAgICAgICByZXR1cm4ganNvbi5sb2FkcyhwYXRoLnJlYWRfdGV4dChlbmNvZGluZz0idXRmLTgiKSkKICAgIHJldHVybiBkZWZhdWx0CgoKZGVmIG1haW4oKSAtPiBpbnQ6CiAgICBwcmljZXMgPSBsb2FkX2pzb24oUFJJQ0VTX1BBVEgsIHsidXBkYXRlZF9hdCI6IE5vbmUsICJpdGVtcyI6IHt9fSkKICAgIG1hc3RlciA9IGxvYWRfanNvbihNQVNURVJfUEFUSCwgeyJzaW5nbGVzIjogW10sICJib3hlcyI6IFtdLCAic2V0cyI6IFtdfSkKCiAgICAjIFRPRE8odjHlrp/oo4UpOiDjg4jjg6zjgqvjg5fjg63nm7jloLTjga7jg5Hjg7zjgrkKICAgICMgICAtIOOCt+ODs+OCsOODqzogbWFzdGVyLnNpbmdsZXMg44GuIG5hbWUvbnVtYmVyIOOBp+eFp+WQiOOBlyBidXliYWNrIOOCkuabtOaWsAogICAgIyBUT0RPKHYx5a6f6KOFKTog6LK35Y+W44Ob44Og44Op44Gu44OR44O844K5CiAgICAjICAgLSBCT1josrflj5booag6IG1hc3Rlci5ib3hlcyDjga4gbmFtZSDjgafnhaflkIjvvIjjgrfjg6Xjg6rjg7Pjgq/mnInjgorkvqHmoLzjgpIgYnV5YmFjayDjgavvvIkKICAgICMgICAtIFBTQTEw6LK35Y+W6KGoOiBtYXN0ZXIuc2luZ2xlcyDjgavnhaflkIjjgZcgcHNhWyIxMCJdIOOCkuabtOaWsAogICAgIyDlj5blvpfjgafjgY3jgarjgYTml6Xjga/ml6LlrZjlgKTjgpLkv53mjIHjgZnjgovjga7jgYzljp/liYfjgILjgZPjgZPjgafjga/mnqDjgaDjgZHnlKjmhI/jgZfjgIEKICAgICMg44OR44O844K144Gv44K144Kk44OI5qeL6YCg44Gu5a6f5Zyw56K66KqN5b6M44Gr5pyJ5Yq55YyW44GZ44KL44CCCiAgICBwcmludChmInNpbmdsZXM9e2xlbihtYXN0ZXIuZ2V0KCdzaW5nbGVzJywgW10pKX0gYm94ZXM9e2xlbihtYXN0ZXIuZ2V0KCdib3hlcycsIFtdKSl9IikKICAgIHByaW50KCJwYXJzZXJzIG5vdCB5ZXQgZW5hYmxlZDsgcHJpY2VzLmpzb24gbGVmdCB1bmNoYW5nZWQiKQogICAgcmV0dXJuIDAKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgc3lzLmV4aXQobWFpbigpKQo=
+#!/usr/bin/env python3
+"""価格の日次取得（v1）。
+
+取得先:
+  - トレカプロ相場 (tcgpro.co.jp / soubapro.com): シングル買取価格の集計
+  - 買取ホムラ (kaitori-homura.com): 未開封BOX買取表（シュリンク有無別）、PSA10買取表
+
+出力: data/prices.json
+  { "updated_at": ISO, "items": { master_id: {buyback, flea, sale, psa:{10..6, low}} } }
+
+注意: 各サイトのHTML構造は変わりうる。パーサは構造変更に弱い前提で、
+取得できなかった品目は前回の値を保持する（消さない）。
+サイト側の負荷にならないよう、リクエスト間隔を空け、User-Agentを明示する。
+"""
+import json
+import sys
+import time
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+PRICES_PATH = ROOT / "data" / "prices.json"
+MASTER_PATH = ROOT / "data" / "master.json"
+UA = {"User-Agent": "pokeka-system/1.0 (personal asset tracker)"}
+
+
+def fetch(url: str) -> str:
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", errors="replace")
+
+
+def load_json(path: Path, default):
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return default
+
+
+def main() -> int:
+    prices = load_json(PRICES_PATH, {"updated_at": None, "items": {}})
+    master = load_json(MASTER_PATH, {"singles": [], "boxes": [], "sets": []})
+
+    # TODO(v1実装): トレカプロ相場のパース
+    #   - シングル: master.singles の name/number で照合し buyback を更新
+    # TODO(v1実装): 買取ホムラのパース
+    #   - BOX買取表: master.boxes の name で照合（シュリンク有り価格を buyback に）
+    #   - PSA10買取表: master.singles に照合し psa["10"] を更新
+    # 取得できない日は既存値を保持するのが原則。ここでは枠だけ用意し、
+    # パーサはサイト構造の実地確認後に有効化する。
+    print(f"singles={len(master.get('singles', []))} boxes={len(master.get('boxes', []))}")
+    print("parsers not yet enabled; prices.json left unchanged")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
