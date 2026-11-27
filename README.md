@@ -1,1 +1,53 @@
-IyDjg53jgrHjgqvos4fnlKPnrqHnkIbvvIvmir3pgbjlkYrnn6Xjgrfjgrnjg4bjg6AKCj4gKirOsueJiO+8iOODmeODvOOCv++8iSB2MC4xKiog4oCUIOOBvuOBmuWLleOBj+W9ouOBp+WFrOmWi+OBl+OAgeS9v+OBhOOBquOBjOOCieiCsuOBpuOCi+WJjeaPkOOBruODquODquODvOOCueOAggo+IOWPsOW4s+ODu+aKvemBuOODnOODvOODieODu+izh+eUo+OCsOODqeODleODu+ODkOODqeODkeODg+OCr+OBr+WIqeeUqOWPr+iDveOAguS+oeagvOOBruiHquWLleWPluW+l+ODkeODvOOCteOBr+mghuasoeacieWKueWMluS4re+8iOW9k+mdouOBr+aJi+WFpeWKm+S+oeagvOOBp+OCguipleS+oeOBp+OBjeOBvuOBme+8ieOAggoK6Ieq5YiG44Go5ZGo44KK44Gu5pWw5Lq644Gg44GR44GM5L2/44GG44CB44Od44Kx44Oi44Oz44Kr44O844OJ44Gu44CM6LOH55Sj566h55CG44CN44Go44CM5oq96YG45ZGK55+l44Gu5LiA5YWD566h55CG44CN44KSMeOBpOOBq+OBl+OBn+OCueODnuODm+WQkeOBkVdlYuOCouODl+ODquOAggpNdXNl44GM6YGL55So44GZ44KL44Gu44Gn44Gv44Gq44GP44CBKirjgZPjga7jg6rjg53jgrjjg4jjg6rljZjkvZPjgafoh6rli5Xjgaflm57jgosqKuODkeODg+OCseODvOOCuOOBp+OBmeOAggoKIyMg5qeL5oiQCgp8IOWxpCB8IOWun+ijhSB8CnwtLS18LS0tfAp8IOeUu+mdoiB8IEdpdEh1YiBQYWdlc++8iOmdmeeahOOCteOCpOODiOOAgWBpbmRleC5odG1sYO+8ieOAguOCueODnuODm+OBruODm+ODvOODoOeUu+mdouOBq+i/veWKoOOBmeOCjOOBsOOCouODl+ODquaEn+immuOBp+S9v+OBiOOCiyB8Cnwg44OH44O844K/IHwgYGRhdGEvKi5qc29uYO+8iOS+oeagvOODu+aKvemBuOODu+aWsOWVhuWTgeODu+ODnuOCueOCv+ODvERC77yJIHwKfCDoh6rli5Xmm7TmlrAgfCBHaXRIdWIgQWN0aW9ucyDjga4y57O757Wx77ya4pGg55m66KGo55uj6KaW77yI5pel5LitMjDliIbjgYrjgY3vvInikaHkvqHmoLzjg7vmir3pgbjjga7ml6XmrKHmm7TmlrDvvIjmr47mnJ035pmCSlNU77yJIHwKfCDlgIvkurrjga7os4fnlKMgfCDlkITnq6/mnKvjga7jg5bjg6njgqbjgrbkv53lrZjvvIjjgrXjg7zjg5Djg7zjgavnva7jgYvjgarjgYTvvInjgILkurrjgavjgojjgaPjgabos4fnlKPjg4fjg7zjgr/jga/mt7fjgZbjgonjgarjgYQgfAoKIyMg44K744OD44OI44Ki44OD44OX5omL6aCGCgoxLiDjgZPjga7jg6rjg53jgrjjg4jjg6rjgpIgR2l0SHViIOOBq+e9ruOBj++8iHB1YmxpY+aOqOWlqOOAguWAi+S6uuOBruizh+eUo+ODh+ODvOOCv+OBr+ODquODneOCuOODiOODquOBq+WFpeOCieOBquOBhO+8iQoyLiAqKlBhZ2Vz5YWs6ZaLKio6IOODquODneOCuOODiOODquOBriBTZXR0aW5ncyDihpIgUGFnZXMg4oaSIFNvdXJjZSDjgpLjgIxEZXBsb3kgZnJvbSBhIGJyYW5jaOOAjeKGkiBCcmFuY2g6IGBtYWluYCAvIGAocm9vdClgIOOBq+OBl+OBpiBTYXZlCiAgIOKGkiBgaHR0cHM6Ly8844Om44O844K244O85ZCNPi5naXRodWIuaW8vPOODquODneOCuOODiOODquWQjT4vYCDjgafjgqLjg5fjg6rjgYzplovjgZHjgosKMy4gKipBY3Rpb25zKio6IOWFrOmWi+ODquODneOCuOODiOODquOBp+OBr+aXouWumuOBp+acieWKueOAgkFjdGlvbnPjgr/jg5bjgacgYGRhaWx5LXVwZGF0ZWAg44GoIGB3YXRjaC1hbm5vdW5jZW1lbnRzYCDjgYzopovjgYjjgozjgbBPSwo0LiDjgrnjg57jg5vjgadVUkzjgpLplovjgY3jgIHjg5bjg6njgqbjgrbjga7lhbHmnInjg6Hjg4vjg6Xjg7zjgYvjgonjgIzjg5vjg7zjg6DnlLvpnaLjgavov73liqDjgI0KCiMjIOS9v+OBhOaWuQoKLSAqKuODm+ODvOODoCoqOiDlkIjoqIjos4fnlKPpoY3jg7vlkKvjgb/mkI3nm4rjg7vos4fnlKPmjqjnp7vjgrDjg6njg5XvvIjngrnjgpLjgr/jg4Pjg5fjgafjgZ3jga7ml6Xjga7lk4Hnm67liKXjg5fjg6njg57jgqTvvInjgIHnt6DliIfjgYzov5HjgYTmir3pgbjjgIHmlrDllYblk4EKLSAqKuWPsOW4syoqOiDlhpnnnJ/vvIjmkq7lvbHvvI/jg5Xjgqnjg6vjg4DvvInjgYvjgonnmbvpjLIg4oaSIOWei+eVquODu0pBTuOCkuiqreOBv+WPluOCiuWAmeijnOaPkOekuiDihpIg44K/44OD44OX56K65a6a44CC5qSc57Si44O75omL5YWl5Yqb44KC5Y+v44CCCiAg57We44KK6L6844G/77yI56iu6aGe77yP44Kw44Os44O844OJIFBTQTEw44CcNuWAi+WIpeODuzXku6XkuIvjgb7jgajjgoHvvI/lkKvjgb/nm4rjg7vmkI3vvInjgajku7bmlbDjg7vlkIjoqIjooajnpLrjgaTjgY0KLSAqKuaKvemBuCoqOiDjgqjjg6rjgqLntZ7jgorovrzjgb/vvIjlm7rlrprjg6rjgrnjg4jvvInjgIHoh6rliIbjga7lnLDln5/jgpLoqK3lrprjgZnjgovjgajlhKrlhYjooajnpLrjgILlv5zli5/nirbmhYvjga/nq6/mnKvjgavoqJjpjLIKLSAqKuODkOODqeODkeODg+OCryoqOiDlvL7jgZTjgajjgavvvIvvvI/iiJLjgaflgIvmlbDnrqHnkIbvvIjos4fnlKPjgavjga/lkKvjgoHjgarjgYTvvIkKLSDjgr/jg5bjga/jgr/jgqTjg4jjg6vliKXvvIjjg53jgrHjgqvvvI/jg6/jg7Pjg5Tjg7zjgrnvvInjgILjg6/jg7Pjg5Tjg7zjgrnjga/jg53jgrHjgqvlrozmiJDlvozjgavov73liqDkuojlrpoKCiMjIOODh+ODvOOCv+OBqOiHquWLleWPluW+lwoKLSDkvqHmoLzvvIhgZGF0YS9wcmljZXMuanNvbmDvvIk6IOS4u+i7uOOBr+ODiOODrOOCq+ODl+ODreebuOWgtO+8iOOCt+ODs+OCsOODq+iyt+WPlu+8ieOBqOiyt+WPluODm+ODoOODqe+8iEJPWOODu1BTQTEw6LK35Y+W77yJ44CCCiAg6LOH55Sj6KmV5L6h44Gv44CM5LuK5aOy44KM44KL5L6h5qC844CN77yd6LK35Y+W44Go44OV44Oq44Oe5a6f57i+44Gu5Lit6ZaT55uu5a6J44CC6ZGR5a6a5ZOB44Gv44Kw44Os44O844OJ5Yil5L6h5qC844KS5Y+C54WnCi0g5oq96YG477yIYGRhdGEvbG90dGVyaWVzLmpzb25g77yJOiDjg53jgrHjg6Ljg7Pjgrvjg7Pjgr/jg7zjgqrjg7Pjg6njgqTjg7PlkYrnn6XjgIHjg53jgrHjgqvmir3pgbjlm7PpkZEg562JCi0g5paw5ZWG5ZOB77yIYGRhdGEvcHJvZHVjdHMuanNvbmDvvIk6IOWFrOW8j+eZuuihqOOCkuebo+imluODr+ODvOOCr+ODleODreODvOOBjOWPjeaYoAotIOWPluW+l+OCueOCr+ODquODl+ODiOOBryBgc2NyaXB0cy9gIOOBq+mFjee9ruOAguOCteOCpOODiOani+mAoOOBruWkieabtOOBp+WPluW+l+OBp+OBjeOBquOBhOaXpeOBr+WJjeWbnuWApOOCkuS/neaMgeOBmeOCiwoKIyMg5q2j55u044Gq6ZmQ55WMCgotIEdpdEh1YiBBY3Rpb25zIOOBruWumuacn+Wun+ihjOOBq+OBr+aVsOWIhuOAnOWNgeaVsOWIhuOBrumBheW7tuOBjOOBguOCiuOBhuOCi+OBn+OCgeOAgeaWsOWVhuWTgeOBruOAjOeZuuihqOOBqOWQjOaZguOAjeOBrzE144CcMzDliIbku6XlhoXjga7lj43mmKDjgYznspLluqYKLSBY77yI5penVHdpdHRlcu+8ieOBr+WFrOW8j+eEoeaWmUFQSeOBjOOBquOBj+iHquWLleWPluW+l+OBjOacgOOCguS4jeWuieWumuOAguS+oeagvOODu+aKvemBuOOBr+S7luOCveODvOOCueOBp+ijnOWujOOBmeOCi+ioreioiAotIOWGmeecn+iqjeitmOOBr09DUu+8iOWei+eVquODu0pBTu+8ie+8i+WAmeijnOaPkOekuuaWueW8j+OAguacgOe1gueiuuWumuOBr+W/heOBmuS6uuOBruOCv+ODg+ODlwoKIyMgdjLku6XpmY0KCi0g5L6h5qC85Y+W5b6X44Gu5ouh5by177yI44Oh44Or44Kr44Oq44O744Ok44OV44Kq44Kv5a6f57i+44CBWOmAn+WgseOBruaknOefpe+8iQotIOODr+ODs+ODlOODvOOCueOCq+ODvOODieOBruOCv+ODlui/veWKoAotIOizh+eUo+ODh+ODvOOCv+OBruWFseacieODu+W8leOBjee2meOBjuaWueazleOBruaknOiojgo=
+# ポケカ資産管理＋抽選告知システム
+
+> **β版（ベータ） v0.1** — まず動く形で公開し、使いながら育てる前提のリリース。
+> 台帳・抽選ボード・資産グラフ・バラパックは利用可能。価格の自動取得パーサは順次有効化中（当面は手入力価格でも評価できます）。
+
+自分と周りの数人だけが使う、ポケモンカードの「資産管理」と「抽選告知の一元管理」を1つにしたスマホ向けWebアプリ。
+Museが運用するのではなく、**このリポジトリ単体で自動で回る**パッケージです。
+
+## 構成
+
+| 層 | 実装 |
+|---|---|
+| 画面 | GitHub Pages（静的サイト、`index.html`）。スマホのホーム画面に追加すればアプリ感覚で使える |
+| データ | `data/*.json`（価格・抽選・新商品・マスターDB） |
+| 自動更新 | GitHub Actions の2系統：①発表監視（日中20分おき）②価格・抽選の日次更新（毎朝7時JST） |
+| 個人の資産 | 各端末のブラウザ保存（サーバーに置かない）。人によって資産データは混ざらない |
+
+## セットアップ手順
+
+1. このリポジトリを GitHub に置く（public推奨。個人の資産データはリポジトリに入らない）
+2. **Pages公開**: リポジトリの Settings → Pages → Source を「Deploy from a branch」→ Branch: `main` / `(root)` にして Save
+   → `https://<ユーザー名>.github.io/<リポジトリ名>/` でアプリが開ける
+3. **Actions**: 公開リポジトリでは既定で有効。Actionsタブで `daily-update` と `watch-announcements` が見えればOK
+4. スマホでURLを開き、ブラウザの共有メニューから「ホーム画面に追加」
+
+## 使い方
+
+- **ホーム**: 合計資産額・含み損益・資産推移グラフ（点をタップでその日の品目別プラマイ）、締切が近い抽選、新商品
+- **台帳**: 写真（撮影／フォルダ）から登録 → 型番・JANを読み取り候補提示 → タップ確定。検索・手入力も可。
+  絞り込み（種類／グレード PSA10〜6個別・5以下まとめ／含み益・損）と件数・合計表示つき
+- **抽選**: エリア絞り込み（固定リスト）、自分の地域を設定すると優先表示。応募状態は端末に記録
+- **バラパック**: 弾ごとに＋／−で個数管理（資産には含めない）
+- タブはタイトル別（ポケカ／ワンピース）。ワンピースはポケカ完成後に追加予定
+
+## データと自動取得
+
+- 価格（`data/prices.json`）: 主軸はトレカプロ相場（シングル買取）と買取ホムラ（BOX・PSA10買取）。
+  資産評価は「今売れる価格」＝買取とフリマ実績の中間目安。鑑定品はグレード別価格を参照
+- 抽選（`data/lotteries.json`）: ポケモンセンターオンライン告知、ポケカ抽選図鑑 等
+- 新商品（`data/products.json`）: 公式発表を監視ワークフローが反映
+- 取得スクリプトは `scripts/` に配置。サイト構造の変更で取得できない日は前回値を保持する
+
+## 正直な限界
+
+- GitHub Actions の定期実行には数分〜十数分の遅延がありうるため、新商品の「発表と同時」は15〜30分以内の反映が粒度
+- X（旧Twitter）は公式無料APIがなく自動取得が最も不安定。価格・抽選は他ソースで補完する設計
+- 写真認識はOCR（型番・JAN）＋候補提示方式。最終確定は必ず人のタップ
+
+## v2以降
+
+- 価格取得の拡張（メルカリ・ヤフオク実績、X速報の検知）
+- ワンピースカードのタブ追加
+- 資産データの共有・引き継ぎ方法の検討
