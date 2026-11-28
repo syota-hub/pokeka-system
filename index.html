@@ -205,6 +205,12 @@ let PRODUCTS = [];
 async function loadData(){
   const get = async (p, fb) => { try{ const r = await fetch(p); if(!r.ok) throw 0; return await r.json(); }catch(e){ return fb; } };
   MASTER = await get("data/master.json", MASTER);
+  // v0.3: 画像URLは data/images.json に分離配信 (master.json の転送サイズ上限対策)。取得失敗時は画像なしで継続する
+  const im = await get("data/images.json", null);
+  if (im && im.items && Array.isArray(MASTER.singles)){
+    const byId = {}; MASTER.singles.forEach(s => { byId[s.id] = s; });
+    for (const id in im.items){ const s = byId[id]; if (s) s.image = im.items[id]; }
+  }
   const pr = await get("data/prices.json", PRICES); PRICES = pr;
   const lo = await get("data/lotteries.json", {items:[]}); LOTTERIES = lo.items || [];
   const pd = await get("data/products.json", {items:[]}); PRODUCTS = pd.items || [];
