@@ -55,6 +55,19 @@
   .photo-preview{width:100%; border-radius:10px; margin:8px 0}
   .cand{width:100%; text-align:left; padding:10px; margin-bottom:6px; border-radius:10px;
     border:1px solid var(--line); background:var(--card2); color:var(--text)}
+  .pk-row{display:flex; gap:10px; align-items:center; padding:8px; margin-bottom:6px;
+    border:1px solid var(--line); border-radius:10px; background:var(--card2)}
+  .pk-thumb{width:52px; height:73px; flex:none; border-radius:6px; background:var(--card); object-fit:contain}
+  .pk-thumb-none{display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:10px; text-align:center}
+  .pk-name{font-weight:700; font-size:14px; line-height:1.3}
+  .pk-step{display:flex; align-items:center; gap:6px; flex:none}
+  .pk-step button{width:40px; height:40px; border-radius:50%; border:1px solid var(--line);
+    background:var(--card); color:var(--text); font-size:18px}
+  .pk-qty{min-width:26px; text-align:center; font-weight:800}
+  .pk-actions{display:flex; gap:6px; margin-top:6px}
+  .pk-actions button{flex:1; min-height:40px; padding:8px 0; border-radius:10px; border:1px solid var(--line);
+    background:var(--card); color:var(--text); font-size:13px; font-weight:700}
+  .pk-actions button.pk-add{background:var(--accent); color:#191900; border-color:var(--accent)}
 </style>
 </head>
 <body>
@@ -127,6 +140,8 @@
       <label>マスターから選ぶ（検索）</label>
       <input id="f-master-search" placeholder="名前・型番で検索">
       <select id="f-master"></select>
+      <div id="f-picked" class="muted"></div>
+      <div id="f-picker"></div>
       <label>名前（マスターに無い場合は直接入力）</label>
       <input id="f-name" placeholder="カード名／商品名">
       <div class="grid2">
@@ -369,13 +384,127 @@ document.getElementById("f-master").addEventListener("change", e=>{
   document.getElementById("f-rarity").value = m.rarity || "";
   document.getElementById("f-type").value = m._t;
 });
+
+/* ============ カード検索ピッカー（名前→イラスト→タップで選択／追加） ============ */
+let pickerMasterId = null;   // ピッカーで「選ぶ」を押したカードの master id（セレクト未反映時の受け皿）
+const pkQty = {};            // masterId -> ピッカー上の個数
+let pkIndex = null;          // [{m, nn, nnum}] 正規化済み検索インデックス
+let pkSeq = 0;
+const normStr = s => (s || "").normalize("NFKC").toLowerCase()
+  .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60)); // カタカナ→ひらがな寄せ
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function pkBuild(){
+  pkIndex = MASTER.singles.map(m => ({m, nn: normStr(m.name), nnum: normStr(m.number).replace(/\s/g, "")}));
+}
+function pkSearch(q){
+  if (!pkIndex || pkIndex.length !== MASTER.singles.length) pkBuild();
+  const nq = normStr(q).trim(); if (!nq) return [];
+  const nqn = nq.replace(/\s/g, "");
+  const hits = [];
+  for (const e of pkIndex){
+    let tier = -1;
+    if (e.nn.startsWith(nq)) tier = 0;            // 名前前方一致
+    else if (e.nn.includes(nq)) tier = 1;         // 名前部分一致
+    else if (nqn && e.nnum.includes(nqn)) tier = 2; // 型番一致
+    if (tier < 0) continue;
+    const p = PRICES.items[e.m.id];
+    const bv = p ? (p.buyback ?? p.flea ?? p.sale ?? null) : null;
+    hits.push({m: e.m, tier, img: e.m.image ? 1 : 0, bv});
+  }
+  // 関連度 → 画像あり → 価格あり（高価格） の順
+  hits.sort((a, b) => a.tier - b.tier || b.img - a.img || (b.bv ?? -1) - (a.bv ?? -1));
+  return hits;
+}
+function renderPicker(){
+  const box = document.getElementById("f-picker");
+  const q = document.getElementById("f-master-search").value;
+  if (!q.trim() || !MASTER.singles.length){ box.innerHTML = ""; return; }
+  const MAX = 60;
+  const hits = pkSearch(q);
+  if (!hits.length){ box.innerHTML = "<div class='muted' style='margin-top:6px'>該当するカードがありません</div>"; return; }
+  box.innerHTML =
+    `<div class="muted" style="margin:6px 0">${hits.length}件ヒット${hits.length > MAX ? `（上位${MAX}件を表示）` : ""}。「選ぶ」でフォームに反映、「台帳に追加」でそのまま登録できます</div>` +
+    hits.slice(0, MAX).map(({m}) => {
+      const p = priceOf({masterId: m.id, grade: "", manual: ""});
+      return `<div class="pk-row">
+        ${m.image ? `<img class="pk-thumb" loading="lazy" src="${esc(m.image)}" alt="">` : `<div class="pk-thumb pk-thumb-none">画像<br>なし</div>`}
+        <div class="grow">
+          <div class="pk-name">${esc(m.name)}</div>
+          <div class="muted">${esc(m.set || "")}${m.number ? " ／ " + esc(m.number) : ""}${m.rarity ? " ／ " + esc(m.rarity) : ""}</div>
+          <div class="muted">${p.value != null ? "現在価格 " + yen(p.value) + "（" + p.src + "）" : "価格未取得"}</div>
+          <div class="pk-actions">
+            <button data-pk-pick="${esc(m.id)}">選ぶ</button>
+            <button class="pk-add" data-pk-add="${esc(m.id)}">台帳に追加</button>
+          </div>
+        </div>
+        <div class="pk-step">
+          <button data-pk-dec="${esc(m.id)}" aria-label="減らす">−</button>
+          <span class="pk-qty">${pkQty[m.id] || 1}</span>
+          <button data-pk-inc="${esc(m.id)}" aria-label="増やす">＋</button>
+        </div>
+      </div>`;
+    }).join("");
+  box.querySelectorAll("[data-pk-inc]").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.pkInc; pkQty[id] = Math.min(999, (pkQty[id] || 1) + 1);
+    b.closest(".pk-row").querySelector(".pk-qty").textContent = pkQty[id];
+  }));
+  box.querySelectorAll("[data-pk-dec]").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.pkDec; pkQty[id] = Math.max(1, (pkQty[id] || 1) - 1);
+    b.closest(".pk-row").querySelector(".pk-qty").textContent = pkQty[id];
+  }));
+  box.querySelectorAll("[data-pk-pick]").forEach(b => b.addEventListener("click", () => pkPick(b.dataset.pkPick)));
+  box.querySelectorAll("[data-pk-add]").forEach(b => b.addEventListener("click", () => pkAdd(b.dataset.pkAdd, b)));
+}
+function pkPick(id){
+  const m = MASTER.singles.find(x => x.id === id); if (!m) return;
+  pickerMasterId = id;
+  document.getElementById("f-type").value = "single";
+  document.getElementById("f-name").value = m.name || "";
+  document.getElementById("f-number").value = m.number || "";
+  document.getElementById("f-rarity").value = m.rarity || "";
+  const sel = document.getElementById("f-master");
+  sel.value = [...sel.options].some(o => o.value === id) ? id : "";
+  document.getElementById("f-picked").textContent =
+    `選択中： ${m.name}${m.number ? "（" + m.number + "）" : ""} — 個数・状態・鑑定グレード・購入価格を入れて「台帳に追加」を押してください`;
+}
+function pkAdd(id, btn){
+  const m = MASTER.singles.find(x => x.id === id); if (!m) return;
+  const qty = Math.max(1, pkQty[id] || 1);
+  assets.push({
+    id: "a" + Date.now() + "_" + (pkSeq++),
+    type: "single",
+    masterId: id,
+    name: m.name || "",
+    number: m.number || "",
+    rarity: m.rarity || "",
+    condition: "美品",
+    grade: "",
+    cert: "",
+    shrink: "",
+    qty,
+    buy: 0,
+    date: "",
+    manual: ""
+  });
+  store.set("assets", assets); takeSnapshot(); renderLedger(); renderHome();
+  document.getElementById("f-picked").textContent = `台帳に追加しました： ${m.name} ×${qty}（生カード）`;
+  if (btn){ const t = btn.textContent; btn.textContent = "追加しました ✓"; setTimeout(() => { btn.textContent = t; }, 1500); }
+}
+let pkTimer = null;
+document.getElementById("f-master-search").addEventListener("input", () => {
+  clearTimeout(pkTimer); pkTimer = setTimeout(renderPicker, 180);
+});
+document.getElementById("f-master").addEventListener("change", e => {
+  pickerMasterId = e.target.value || null;
+  if (e.target.value) document.getElementById("f-picked").textContent = "";
+});
 document.getElementById("btn-add").addEventListener("click", ()=>{
   const name = document.getElementById("f-name").value.trim();
   if (!name) return alert("名前を入れてください");
   assets.push({
     id: "a" + Date.now(),
     type: document.getElementById("f-type").value,
-    masterId: document.getElementById("f-master").value || null,
+    masterId: document.getElementById("f-master").value || pickerMasterId || null,
     name,
     number: document.getElementById("f-number").value.trim(),
     rarity: document.getElementById("f-rarity").value.trim(),
