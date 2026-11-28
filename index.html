@@ -262,6 +262,17 @@ function priceOf(a){
   if (a.manual != null && a.manual !== "") return {value:Number(a.manual), src:"手入力"};
   return {value:null, src:"価格未取得"};
 }
+/* 状態別参考価格（スニダン出品最安・件数併記。買取＝資産評価の基準とは別枠の参考表示） */
+function condLine(masterId){
+  const p = masterId ? PRICES.items[masterId] : null;
+  if (!p || !p.cond) return "";
+  const parts = [];
+  for (const t of ["A","B","C","D"]){
+    const c = p.cond[t];
+    if (c && c.p != null) parts.push(t + " " + yen(c.p) + "（" + (c.n ?? 0) + "件）");
+  }
+  return parts.length ? "参考（スニダン）" + parts.join("・") : "";
+}
 function assetValue(a){ const p = priceOf(a); return p.value == null ? null : p.value * (a.qty||1); }
 function totals(){
   let val = 0, cost = 0, unknown = 0;
@@ -432,6 +443,7 @@ function renderPicker(){
           <div class="pk-name">${esc(m.name)}</div>
           <div class="muted">${esc(m.set || "")}${m.number ? " ／ " + esc(m.number) : ""}${m.rarity ? " ／ " + esc(m.rarity) : ""}</div>
           <div class="muted">${p.value != null ? "現在価格 " + yen(p.value) + "（" + p.src + "）" : "価格未取得"}</div>
+          ${condLine(m.id) ? `<div class="muted">${condLine(m.id)}</div>` : ""}
           <div class="pk-actions">
             <button data-pk-pick="${esc(m.id)}">選ぶ</button>
             <button class="pk-add" data-pk-add="${esc(m.id)}">台帳に追加</button>
@@ -557,6 +569,7 @@ function renderLedger(){
       <div class="row"><span class="grow">${v == null ? "価格未取得" : "評価 " + yen(v)}</span>
       ${d == null ? "" : `<span class="${d>=0?"plus":"minus"}">${d>=0?"+":""}${yen(d)}</span>`}
       <span class="muted">${p.src}</span></div>
+      ${condLine(a.masterId) ? `<div class="muted">${condLine(a.masterId)}</div>` : ""}
     </div>`;
   }).join("") : "<div class='muted'>該当する品目がありません</div>";
   document.querySelectorAll("[data-del]").forEach(b=> b.addEventListener("click", ()=>{
